@@ -16,12 +16,8 @@ const Content = () => {
     console.log(count);
   };
 
-  const handleClick2 = (name) => {
-    console.log(`${name} was clicked`);
-  };
-
-  const handleClick3 = (e) => {
-    console.log(e.target.textContent);
+  const handleClick2 = () => {
+    console.log(count);
   };
 
   return (
@@ -29,7 +25,7 @@ const Content = () => {
       <p onDoubleClick={handleClick}>Hello {name}!</p>
       <button onClick={handleNameChange}>Change Name</button>
       <button onClick={handleClick}>Click It</button>
-      <button onClick={(e) => handleClick3(e)}>Click It</button>
+      <button onClick={handleClick2}>Click It</button>
     </main>
   );
 };
